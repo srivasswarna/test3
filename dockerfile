@@ -1,4 +1,5 @@
-FROM centos
-RUN yum install httpd -y
-ENTRYPOINT /usr/sbin/httpd -D FOREGROUND
-EXPOSE 80
+FROM sandeepdocker019/test3
+WORKDIR /var/www/html
+COPY content/ .
+
+
